@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to "HR_MITRA", root_path, class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link ms-3" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About", about_us_path, class: "nav-link ms-3" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact", contact_us_path, class: "nav-link ms-3" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "T&C", terms_conditions_path, class: "nav-link ms-3" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
