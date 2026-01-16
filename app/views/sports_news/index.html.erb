@@ -1,0 +1,35 @@
+<div class="card rounded-0 mt-5 mb-5" >
+    <div class="card-body">
+       <h2 class="text-center">Sports details
+        </h2>
+     </div>   
+</div>    
+
+
+<div>
+    <%= link_to 'Create Sports Details', new_sports_news_path ,class: "btn btn-primary btn-lg mb-5 rounded-0 text-center"%>
+</div>
+<table class="mt-5 ">
+    <thead >
+        <tr>
+            <th>level</th>
+            <th>authority</th>
+            <th>mode</th>
+        </tr>    
+     </thead> 
+
+     <tbody >
+        <% @sports_news.each do |sports_new| %>
+
+                <tr>
+                    <td><%= sports_new.level%></td>
+                    <td><%= sports_new.authority%></td>
+                    <td><%= sports_new.mode%></td>
+                </tr>   
+
+        <% end %> 
+        </tbody>  
+</table>    
+
+   
+

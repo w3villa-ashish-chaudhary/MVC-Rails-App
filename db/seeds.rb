@@ -28,6 +28,25 @@ employee=Employee.create(
   address_line_1:'Kakadeo',
   address_line_2:'Rawatpur'
 )
+sport=Sport.create(
+    type:'Cricket',
+    level:'State',
+    auhtority:'UPCA',
+    mode:'outdoor',
+
+)
+sport.save
 
 
-employee.save
+sport=SportsNew.create(
+  level:'State',
+   authority: 'UPCA',
+  mode:'Outdoor'
+)
+
+sport=SportsNew.create(
+
+level:'inter-state',
+   authority: 'UPCA',
+  mode:'Outdoor'
+)

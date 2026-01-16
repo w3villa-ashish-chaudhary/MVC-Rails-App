@@ -1,0 +1,46 @@
+<div class="col-lg-12">
+    <div class="card rounded-0 mt-5 mb-5">
+        <div class="card-body">
+        <h2 class="text-center">Create Sports Details</h2>
+        </div>
+    </div>
+
+    <%= form_with model: @sports_news, local: true do |form| %>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="form-group">
+                <%= form.label :level, class: "mb-2" %>
+                <%= form.text_field :level, class: "form-control form-control-lg rounded-0" %>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <%= form.label :authority, class: "mb-2"%>
+                    <%= form.text_field :authority, class: "form-control form-control-lg rounded-0" %>
+                </div>   
+            </div>  
+
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <%= form.label :mode, class: "mb-2"%>
+                    <%= form.text_field :mode, class: "form-control form-control-lg rounded-0" %>
+                </div>   
+            </div>   
+
+        </div>
+
+
+        <div class="row">
+
+             <div class="col-lg-12 mt-5">
+                    <div class="text-center">
+                        <%= form.submit class:"btn btn-primary btn-lg rounded-0"%>
+                        <%= link_to 'Back to Sports Details' ,  sports_news_index_path, class:"btn btn-outline-primary btn-lg rounded-0"%>
+                    </div>
+             </div>
+        </div>   
+    
+    <% end %>
+</div>
