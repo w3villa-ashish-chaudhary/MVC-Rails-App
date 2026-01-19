@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   get  "privacy-policy" => "pages#privacy_policy"
   get  "terms-conditions" => "pages#terms_and_conditions"
 
-
   get "user" => "login#user" 
   get "profile" => "login#profile"
  
