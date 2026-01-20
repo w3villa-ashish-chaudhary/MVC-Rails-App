@@ -36,8 +36,10 @@ https://mvc-rails-app-1.onrender.com/employees
 - HR-themed professional color palette
 
 ### ⚙️ Rails Best Practices
-- RESTful routing
 - MVC architecture
+- Use of **partials** to reuse UI components
+- **Model validations** for data integrity
+- Display of **validation error messages** on forms
 - Strong parameters
 - `before_action` filters
 - Exception handling using `ActiveRecord::RecordNotFound`
