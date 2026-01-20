@@ -1,4 +1,6 @@
 class EmployeesController < ApplicationController
+
+    before_action :set_employee, only: [:edit,:update,:show,:destroy]
   #index,new,create : these are employees resource actions
     def index
        @employees=Employee.all
@@ -18,12 +20,11 @@ class EmployeesController < ApplicationController
     end 
 
     def edit
-        @employee=Employee.find(params[:id])
+        #phele employee chaiye hoga:before action iske liye hai
     end    
 
     def update
-         @employee=Employee.find(params[:id])
-
+        #phele employee chaiye hoga
          if @employee.update(employee_params)
             redirect_to employees_path, notice: 'Employee updated successfully'
          else   
@@ -32,12 +33,11 @@ class EmployeesController < ApplicationController
     end  
     
     def show
-        @employee=Employee.find(params[:id])
+        #phele employee chaiye hoga
     end 
     
     def destroy
-        @employee=Employee.find(params[:id])
-
+        #phele employee chaiye hoga
         if @employee.destroy 
             redirect_to employees_path , notice:"Employee Deleted"
         else
@@ -50,5 +50,11 @@ class EmployeesController < ApplicationController
     
     def employee_params
         params.require(:employee).permit(:first_name,:last_name,:city,:state,:pincode,:country,:address_line_1,:address_line_2)
+    end   
+    
+    def set_employee
+         @employee=Employee.find(params[:id])
+     rescue ActiveRecord::RecordNotFound => error
+        redirect_to employees_path , notice:error
     end    
 end  

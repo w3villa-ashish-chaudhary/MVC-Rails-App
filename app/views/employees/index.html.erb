@@ -34,11 +34,11 @@
             <td><%= employee.address_line_1 %></td>
             <td><%= employee.address_line_2 %></td>
             <td ><%= link_to 'Edit' , edit_employee_path(employee), class:"btn btn-primary"%>
+            <%= link_to 'View' , employee_path(employee), class:"btn btn-info"%>
+            <%= button_to 'Delete', employee_path(employee), method: :delete, 
+              data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
             </td>
-            <td>
-            <%= link_to 'View' , employee_path(employee), class:"btn btn-info"%></td>
-            <td>
-            <%= link_to 'Delete' , employee_path(employee),  method: :delete , data: {confirm: 'Are you sure?'},class:"btn btn-danger"%></td>
+           
            
             
          </tr> 
