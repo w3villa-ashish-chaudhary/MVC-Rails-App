@@ -35,7 +35,11 @@
             <td><%= employee.address_line_2 %></td>
             <td ><%= link_to 'Edit' , edit_employee_path(employee), class:"btn btn-primary"%>
             <%= link_to 'View' , employee_path(employee), class:"btn btn-info"%>
-            <%= link_to 'Delete' , employee_path(employee),  method: :delete , data: {confirm: 'Are you sure?'},class:"btn btn-danger"%>
+           <%= button_to 'Delete', employee_path(employee),
+                method: :delete,
+                onclick: "return confirm('Are you sure?');",
+                class: "btn btn-danger" %>
+
             </td>
            
            
