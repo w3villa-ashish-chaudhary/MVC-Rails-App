@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   resources :employees #resource controller
 
   resources :sports_news
-
   get "about-us" => "pages#about_us"
   get "contact-us" => "pages#contact_us"
   get  "privacy-policy" => "pages#privacy_policy"
