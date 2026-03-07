@@ -21,6 +21,9 @@
   <body>
     <%= render 'shared/header'%>
 
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <!-- Flash Message Modal -->
     <% if flash[:notice] || flash[:alert] %>
       <div class="modal fade" id="flashModal" tabindex="-1" aria-labelledby="flashModalLabel" aria-hidden="true">

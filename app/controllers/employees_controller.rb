@@ -6,11 +6,11 @@ class EmployeesController < ApplicationController
        @employees=Employee.all
     end  
     
-    def new 
+    def new # new is needed to show empty form
         @employee=Employee.new #create model object
     end  
     
-    def create
+    def create #worked when we submit form
          @employee = Employee.new(employee_params)
             if @employee.save
                 redirect_to employees_path, notice: 'Employee created successfully'
