@@ -1,0 +1,1397 @@
+
+
+
+/*Kivo Products/Services Css*/
+
+.new-hero-wrapper {
+    max-width: 600px;
+    padding-right: 30px;
+    font-family: sans-serif;
+}
+
+/* The Main Headline */
+.new-hero-title {
+    color: #ffffff;
+    font-size: 38px;     
+    font-weight: 700;
+    line-height: 1.2;     
+    margin-bottom: 24px;  
+}
+
+/* The Paragraph Text */
+.new-hero-desc {
+    color: #e0e0e0;      
+    font-size: 16px;
+    line-height: 1.6;     
+    margin-bottom: 24px;  
+    opacity: 0.9;
+}
+
+/* Container for the buttons */
+.new-hero-actions {
+    display: flex;
+    align-items: center;  
+    gap: 30px;           
+    margin-top: 35px;
+}
+
+.new-hero-btn-demo {
+    background-color: #ffffff;
+    color: #363663;      
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 6px;  
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.new-hero-btn-demo:hover {
+    transform: translateY(-2px); 
+	color: var(--primary-blue);
+}
+
+
+.new-hero-link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.new-hero-link:hover {
+    text-decoration: underline;
+	color: white;
+	
+}
+
+@media (max-width: 992px) {
+
+.new-hero-wrapper {
+	margin-top: 54px !important;
+}
+
+.new-hero-actions {
+	margin-bottom: 27px !important;
+}
+
+.new-hero-actions{
+	margin-top: 0 !important;
+}
+.new-hero-btn-demo {
+	padding: 14px 17px !important;
+}
+
+.new-hero-title{
+	font-size: 23px !important;
+}
+}
+
+/* Section Background and Padding */
+.trusted-section {
+    background-color: #f4f5f6; /* Light gray background matching the image */
+    padding: 60px 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Container for text to control the width */
+.trusted-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Heading Style */
+.trusted-title {
+    color: #1a1a1a;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Subtext Style */
+.trusted-desc {
+    color: #4a4a4a;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 auto 40px auto;
+    max-width: 800px;
+}
+
+/* Logo Image Wrapper */
+.trusted-logos-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Ensure the single image scales responsively */
+.trusted-logos-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Existing Section & Header Styles */
+.hr-features-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  overflow: hidden; /* Prevents glow from spilling out */
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hr-features-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hr-features-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.hr-features-header p {
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.hr-features-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 86px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+/* --- NEW: Image Area Styling --- */
+
+/* Wrapper for laptop and calendar */
+.hr-features-image-wrapper {
+  flex: 1.2; /* Give it slightly more space */
+  position: relative;
+  z-index: 1;
+}
+
+/* The Radial Glow Effect behind the images */
+.hr-features-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: -10%;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+    background-image: radial-gradient(circle at 36% 51%, rgba(249, 206, 3, 0.6) 0%, rgba(255, 255, 255, 0) 48%),;
+    pointer-events: none;
+	filter: blur(20px);
+}
+
+/* Blue Glow (Bottom-Right) */
+.hr-features-image-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -25%;
+    right: -15%;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+    background-image: radial-gradient(ellipse at center, rgba(113, 134, 203, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+    filter: blur(20px);
+}
+/* Main Laptop Image Style */
+.main-laptop-img {
+  width: 100%;
+  max-width: 650px; /* Limit max width */
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2; /* Above the glow */
+}
+
+/* Floating Calendar Image Style */
+.floating-calendar-img {
+    position: absolute;
+    top: 12%;
+    left: 73%;
+    transform: translateY(-50%);
+    width: 175px;
+    height: auto;
+    z-index: 0;
+    border-radius: 12px;
+}
+
+/* --- End NEW Styling --- */
+
+
+/* Timeline Steps Styles (Same as before) */
+.hr-features-steps {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hr-features-steps::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 21px;
+  width: 2px;
+  border-left: 2px dashed #d1d1e0;
+  z-index: 0;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.step-indicator {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #f0f0f5;
+  color: #666699;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-item.active .step-indicator {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+}
+
+.step-text {
+  padding-top: 0px;
+}
+
+.step-text h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding-left: 0;
+  margin: 0 0 10px 0;
+}
+
+.step-item:not(.active) .step-text h3 {
+  color: #4a4a4a;
+}
+
+.step-text p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Banner Style */
+.hr-features-banner {
+  background-color: #fefae3;
+  border-radius: 8px;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.hr-features-banner p {
+  font-size: 18px;
+  color: #2c2c2c;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hr-features-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .hr-features-image-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* On smaller screens, you might want to hide or re-position the calendar */
+  .floating-calendar-img {
+      /* Example: hide on mobile to prevent overlapping */
+      /* display: none; */
+      
+      /* OR position it below: */
+      position: static;
+      transform: none;
+      margin: -20px auto 0 auto; /* Overlap slightly and center */
+      display: block;
+  }
+}
+
+/* Section Container */
+.hr-solutions-section {
+  padding: 80px 20px;
+  background-color: #F6F7FE;
+  font-family: sans-serif;
+}
+
+.hr-solutions-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Row Layout */
+.solution-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.solution-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Flex Columns */
+.solution-text {
+  flex: 1;
+}
+
+.solution-image {
+  flex: 1;
+  text-align: center;
+}
+
+.solution-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Typography for Row 1 */
+.solution-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.solution-text p {
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Typography for Row 2 */
+.intro-text {
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin-bottom: 30px !important;
+}
+
+/* List Styles */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0;
+  gap: 16px;
+}
+
+.check-icon {
+  flex-shrink: 0;
+  margin-top: 2px; /* Aligns icon visually with the top of the text */
+}
+
+.list-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: -5px 0 8px 0;
+}
+
+.list-content p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .solution-row {
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 80px;
+  }
+  
+  /* Forces text to appear above images on mobile for logical reading */
+  .desktop-order-1 {
+    order: 2;
+  }
+  .desktop-order-2 {
+    order: 1;
+  }
+  .benefits-list li{
+	padding-left: 0 !important;
+  }
+  .solution-image img {
+	margin: 0 -17px;
+  }
+}
+
+/*hr-css*/
+
+.hr-modules-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+.hr-modules-section .container {
+  max-width: 1094px;
+  margin: 0 auto;
+}
+
+.modules-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.modules-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.modules-header p {
+  font-size: 15px;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.modules-grid-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.modules-grid {
+  display: flex;
+  gap: 25px;
+  align-items: start;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.modules-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.module-card {
+  flex: 0 0 calc(33.333% - 17px);
+  height: 270px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  padding: 35px 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.module-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 15px 0;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 24px;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.module-desc {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.module-image-wrapper {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 1;
+}
+
+.module-image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+  display: block;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.module-card:hover {
+  background-color:var(--primary-blue);
+  box-shadow: 0 20px 40px rgba(43, 43, 70, 0.2);
+}
+
+.module-card:hover .module-title {
+  color: #ffffff;
+}
+
+.module-card:hover .module-desc {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.module-card:hover .module-image-wrapper {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modules-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+.nav-arrows {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.prev-btn {
+  background-color: #e8e8e8;
+  color: #888;
+}
+
+.next-btn {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+}
+
+.modules-banner {
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.modules-banner p {
+  font-size: 17px;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .module-card {
+    flex: 0 0 calc(50% - 12.5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .module-card {
+    flex: 0 0 100%;
+  }
+}
+
+/* --- Section Container --- */
+.testimonial-section-hrms {
+  /* Fallback color while image loads */
+  background-color: #1a1a3a; 
+  
+  /* Your local background image */
+  background-image: url('../images/testimonial_bg.png');
+  background-size: cover;      /* Makes sure the image fills the entire section */
+  background-position: center; /* Keeps the center of the image aligned */
+  background-repeat: no-repeat;/* Prevents the image from tiling */
+  
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Hide the old CSS pattern --- */
+.testimonial-bg-pattern {
+  display: none; /* We don't need this anymore since your image handles the background */
+}
+
+/* --- Content Wrapper --- */
+.testimonial-container {
+  max-width: 900px;
+  position: relative;
+  z-index: 1; /* Keeps text above the background pattern */
+}
+
+/* --- Typography --- */
+.testimonial-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e0e0e0;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.testimonial-quote {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* --- Author Block --- */
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.author-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #ffffff;
+}
+
+.author-role {
+  font-size: 13px;
+  color: #a0a0c0; /* Light grayish blue */
+  margin: 0;
+}
+
+/* --- Carousel Dots --- */
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ffffff;
+  transform: scale(1.2); /* Slightly larger for the active dot */
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- Main Title Styling --- */
+.testimonial-main-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* --- Slider Layout & Fade Effect --- */
+.testimonial-slider {
+  position: relative;
+  width: 100%;
+  /* Ensures the container doesn't collapse during transitions */
+  display: flex; 
+  height: 380px;
+  justify-content: center;
+}
+
+.testimonial-slide {
+  /* Hidden by default */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px); /* Starts slightly lower for a slide-up effect */
+  transition: all 0.5s ease-in-out;
+}
+
+.testimonial-slide.active {
+  /* Visible state */
+  position: relative; /* Restores height to the parent container */
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .testimonial-quote {
+    font-size: 20px;
+  }
+  
+  .testimonial-quote br {
+    display: none; /* Allow natural wrapping on mobile */
+  }
+}
+
+/* --- Section Basics --- */
+.success-guarantee-section {
+  padding: 22px 20px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+.success-guarantee-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- Layout Container --- */
+.success-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* --- Left Column (Text) --- */
+.success-text {
+  flex: 1;
+  max-width: 500px; /* Constrains text to match the image line-breaks */
+}
+
+.success-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.success-intro {
+  font-size: 15px;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* --- Custom Checkmark List --- */
+.success-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.success-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+.check-mark {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.success-outro {
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- Right Column (Image) --- */
+.success-image {
+  flex: 1.2; /* Gives slightly more room to the image column */
+  display: flex;
+  justify-content: flex-end; /* Aligns image to the right */
+}
+
+.success-image img {
+  width: 100%;
+  max-width: 450px; /* Prevents image from getting too large */
+  height: auto;
+  display: block;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 850px) {
+  .success-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  .success-text {
+    max-width: 100%;
+  }
+  
+  .success-list {
+    align-items: center; /* Centers the list on mobile */
+  }
+  
+  .success-list li {
+    text-align: left; /* Keeps text inside list items left-aligned */
+  }
+
+  .success-image {
+    justify-content: center;
+  }
+}
+
+/* --- Pricing Section Basics --- */
+.pricing-section {
+  background-color: #f5f7fa; /* Light grayish-blue background */
+  padding: 90px 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.pricing-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* --- Typography --- */
+.pricing-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.pricing-desc {
+  font-size: 15px;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0 0 10px 0;
+}
+
+.pricing-sub-desc {
+  font-size: 15px;
+  color: #333333;
+  margin: 0 0 35px 0;
+}
+
+/* --- Buttons Layout --- */
+.pricing-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between buttons */
+}
+
+/* --- Scoped Button Overrides --- 
+   This makes your existing button classes look correct on the light background
+   without breaking them in the top hero section. */
+
+.pricing-section .new-hero-btn-demo {
+  background-color: #425287; /* Dark blue from design */
+  color: #ffffff;
+  border: 1px solid #425287;
+  padding: 12px 30px;
+  border-radius: 4px; /* Square edges like the image */
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  transform: none; /* Removes hover lift from hero section */
+}
+
+.pricing-section .new-hero-btn-demo:hover {
+  background-color: #313d66; /* Darker blue on hover */
+  border-color: #313d66;
+}
+
+.pricing-section .new-hero-link {
+  background-color: #ffffff;
+  color: #425287; /* Blue text */
+  border: 1px solid #b3bcd4; /* Light border */
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.pricing-section .new-hero-link:hover {
+  border-color: #425287;
+
+  text-decoration: none;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 600px) {
+  .pricing-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .pricing-section .new-hero-btn-demo,
+  .pricing-section .new-hero-link {
+    width: 100%; /* Full width buttons on mobile */
+    box-sizing: border-box;
+  }
+}
+
+/* --- Section & Container --- */
+.kv-custom-faq-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+.kv-custom-faq-container {
+  max-width: 1054px;
+  margin: 0 auto;
+}
+
+/* --- Title --- */
+.kv-custom-faq-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+/* --- FAQ List Wrapper --- */
+.kv-custom-faq-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #eaeaea; 
+  gap:7px;
+}
+
+/* --- Individual Item --- */
+.kv-custom-faq-item {
+  background-color: #FAFAFA; 
+  border-bottom: 1px solid #eaeaea;
+  transition: background-color 0.3s ease;
+}
+
+/* Remove default HTML marker/arrow in Safari/Chrome */
+.kv-custom-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+/* Remove default HTML marker/arrow in Firefox */
+.kv-custom-faq-item summary {
+  list-style: none;
+}
+
+/* --- Question Row --- */
+.kv-custom-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px; /* Generous padding */
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.kv-custom-faq-question:hover {
+  background-color: #f3f3f3; /* Slight darkening on hover */
+}
+
+.kv-custom-faq-question strong {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+/* --- Icon Styling --- */
+.kv-custom-faq-icon {
+  color: #888888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Rotate and colorize icon when the details tag is opened */
+details[open].kv-custom-faq-item .kv-custom-faq-icon {
+  transform: rotate(180deg);
+  color: #425287; /* Turns blue when active */
+}
+
+/* Optional: Slight color change for active question text */
+details[open].kv-custom-faq-item .kv-custom-faq-question {
+  color: #425287;
+}
+
+/* --- Answer Row --- */
+.kv-custom-faq-answer {
+  /* 0 top padding (connects to question), 25px bottom padding for space */
+  padding: 0 30px 25px 30px; 
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.6;
+  background-color: transparent;
+}
+
+.kv-custom-faq-answer p {
+  margin: 0;
+}
+
+/* Smooth fade-in animation for pure CSS */
+details[open] .kv-custom-faq-answer {
+  animation: kvFadeSlideDown 0.3s ease-out forwards;
+}
+
+@keyframes kvFadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* --- Section & Container --- */
+.kv-rev-section {
+  padding: 80px 20px;
+  background-color: #f4f6f9; /* Soft light blue/grey section background */
+  font-family: sans-serif;
+}
+
+.kv-rev-container {
+  max-width: 1051px;
+  margin: 0 auto;
+}
+
+/* --- Main Card Layout --- */
+.kv-rev-card {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 24px; /* Large rounded corners */
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  overflow: hidden; /* Crucial: Clips the shapes and image at the borders */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03); /* Soft shadow */
+}
+
+/* --- Left Column (Text & Actions) --- */
+.kv-rev-content {
+  flex: 1;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.kv-rev-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.kv-rev-text {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.6;
+  margin: 0 0 35px 0;
+}
+
+/* Buttons */
+.kv-rev-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.kv-btn {
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.kv-btn-solid {
+  background-color: #3b4b7c; /* Dark navy blue from design */
+  color: #ffffff;
+  border: 1px solid #3b4b7c;
+}
+
+.kv-btn-solid:hover {
+  background-color: #3b4b7c;
+  border-color: #2c385e;
+ color: var(--primary-white);
+
+}
+
+.kv-btn-outline {
+  background-color: transparent;
+  color: #555555;
+  border: 1px solid #b0b8d1; /* Soft bluish-grey border */
+}
+
+.kv-btn-outline:hover {
+  border-color: #3b4b7c;
+  color: #3b4b7c;
+  background-color: #f4f6f9;
+}
+
+/* --- Right Column (Visuals) --- */
+.kv-rev-visuals {
+  flex: 1;
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+}
+
+/* Dark Blue Decorative Background Shapes */
+.kv-shape {
+  position: absolute;
+  background-color: #3b4b7c;
+  z-index: 0;
+}
+
+/* Matches the shape overlapping from the top-right */
+.kv-shape-top-right {
+  top: -80px;
+  right: 15%;
+  width: 250px;
+  height: 200px;
+  border-radius: 50px;
+  transform: rotate(35deg);
+}
+
+/* Matches the shape emerging from the bottom-left of the image area */
+.kv-shape-bottom-left {
+  bottom: -100px;
+  left: -10%;
+  width: 300px;
+  height: 250px;
+  border-radius: 60px;
+  transform: rotate(45deg);
+}
+
+/* The Dashboard Image */
+.kv-dashboard-img {
+   position: relative;
+    z-index: 1;
+    display: block;
+    width: 91%;
+    max-width: none;
+    margin-left: auto;
+    transform: translate(0%, 29%);
+    border-radius: 8px 0 0 0;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+  .kv-rev-card {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  
+  .kv-rev-content {
+    max-width: 100%;
+    padding: 50px 40px;
+    text-align: center;
+  }
+  
+  .kv-rev-buttons {
+    justify-content: center;
+  }
+  
+  .kv-rev-visuals {
+    min-height: 300px;
+    overflow: hidden; /* Keep image constrained on mobile */
+  }
+  
+  .kv-dashboard-img {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .kv-shape-top-right {
+    right: -20px;
+	width: 60%;
+  }
+  
+  .kv-shape-bottom-left {
+    left: -20px;
+	width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .kv-rev-content {
+    padding: 40px 20px;
+  }
+  
+  .kv-rev-buttons {
+    flex-direction: column;
+  }
+  
+  .kv-btn {
+    width: 100%;
+  }
+
+  .kv-dashboard-img {
+        width: 90%;
+        margin: 20px auto 0 auto; 
+        transform: translate(0, 0); 
+        border-radius: 8px 8px 0 0; 
+    }
+
+	.kv-custom-faq-answer p{
+		margin-top: 5px;
+	}
+}
+
+
+/*crm-css*/
+.kivo-hero-cta-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.kivo-hero-cta-btn {
+  background-color: var(--primary-blue); /* Kivo Blue */
+  color: #ffffff !important;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.kivo-hero-cta-btn:hover {
+  transform: translateY(-3px);
+  color: var(--primary-grey) !important;
+}
+
+/*ATS-CSS*/
+
+.testimonial-slider-ats {
+  position: relative;
+  width: 100%;
+  /* Ensures the container doesn't collapse during transitions */
+  display: flex; 
+  height: 450px;
+  justify-content: center;
+}
+
+.testimonial-slider-pm {
+  position: relative;
+  width: 100%;
+  /* Ensures the container doesn't collapse during transitions */
+  display: flex; 
+  height: 300px;
+  margin-top: 40px;
+  justify-content: center;
+}

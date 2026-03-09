@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
   root 'home#index1'
-
+  devise_for :users
   resources :employees #resource controller
 
+  resources :documents
   resources :sports_news
   get "about-us" => "pages#about_us"
   get "contact-us" => "pages#contact_us"
